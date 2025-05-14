@@ -1,0 +1,235 @@
+/* File: ${RELATIVE_PATH}/${NAME}.css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.strokeme {
+	color: white;
+	text-shadow:
+			-3px -3px 0 #000,
+			3px -3px 0 #000,
+			-3px 3px 0 #000,
+			3px 3px 0 #000;
+}
+
+.h3 {
+	font-size: 60px;
+}
+
+.cta-btn {
+	padding: 16px 32px;
+	background-color: aquamarine;
+	border-radius: 10px;
+	border: 1px solid #000000;
+	cursor: pointer;
+	&:hover {
+		background-color: #4fc89e;
+	}
+	font-size: 16px;
+}
+
+.submit-btn {
+	padding: 16px 32px;
+	background-color: #ff0090;
+	color: whitesmoke;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	&:hover {
+		background-color: #fb49ae;
+	}
+	&:active {
+		background-color: black;
+	}
+}
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	background-color: #b5b5b5;
+	img {
+		width: 48px;
+		margin: 16px 24px 16px 16px;
+		border-radius: 15%;
+	}
+	nav {
+		display: flex;
+		gap: 16px;
+		a {
+			color: black;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.hero-section {
+	background-color: blue;
+	background-image: url("hacker.png");
+	background-position: center;
+	background-size: cover ;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	.item-container {
+		background-color: rgba(255, 255, 255, 0.6);
+		padding: 40px;
+		border-radius: 10px;
+		.text-container {
+			margin-bottom: 32px;
+			color: whitesmoke;
+			.main-title {
+				font-size: 48px;
+			}
+		}
+	}
+}
+
+.products-section {
+	padding: 64px 16px 64px 16px;
+	h3 {
+		margin-bottom: 64px;
+		text-align: center;
+	}
+	.product-cards {
+		display: flex;
+		gap: 48px;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		.product-card-container {
+			color: black;
+			width: 260px;
+			.product-card-head {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 64px;
+				background-color: #b5b5b5;
+				border-radius: 10px 10px 0 0;
+			}
+			.product-card-body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 150px;
+				overflow: hidden;
+				img {
+					width: 100%;
+				}
+			}
+			.product-card-footer {
+				background-color: #b5b5b5;
+				padding: 16px;
+				ul {
+					list-style: none;
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+					margin-bottom: 16px;
+				}
+				.btn-container {
+					display: flex;
+					align-items: flex-end;
+					justify-content: flex-end;
+				}
+				border-radius: 0 0 10px 10px;
+			}
+		}
+	}
+}
+
+.newsletter-section {
+	text-align: center;
+	padding: 64px;
+	background-image: url("hacker2.png");
+	background-position: center;
+	background-size: cover ;
+	
+	h3 {
+		color: whitesmoke;
+	}
+	form {
+		margin-top: 32px;
+		.inputs-container {
+		label {
+			display: none;
+		}
+			input {
+				margin-bottom: 32px;
+				padding: 16px;
+				width: 50%;
+				max-width: 500px;
+				border-radius: 10px;
+				border: 3px solid black;
+				
+				&:focus {
+					outline: none;
+					border: 3px solid rgb(163, 97, 255);
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #201d1d;
+	color: whitesmoke;
+	padding: 64px 32px;
+	display: flex;
+	gap: 64px;
+	.footer-logo-container {
+		width: 200px;
+		.square-img {
+			width: 100%;
+			aspect-ratio: 1/1;
+			display: block;
+			margin-bottom: 16px;
+		}
+		.mono-text {
+			text-transform: uppercase;
+			font-size: 24px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			font-family: monospace;
+			margin: 0 0 8px 0;
+			span {
+				display: inline-block;
+				transform: scaleY(2);
+			}
+		}
+	}
+	
+	ul {
+		list-style: none;
+		a {
+			color: whitesmoke;
+			text-decoration: none;
+			border-bottom: 1px solid whitesmoke;
+			&:hover {
+				border-color: rgb(255,0,81);
+			}
+		}
+		li {
+			margin-bottom: 16px;
+		}
+		p {
+			font-weight: 600;
+			font-size: 18px;
+			margin-bottom: 24px;
+		}
+	}
+}
