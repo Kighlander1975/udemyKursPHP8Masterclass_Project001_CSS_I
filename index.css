@@ -6,6 +6,10 @@
 	font-size: 1em;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
